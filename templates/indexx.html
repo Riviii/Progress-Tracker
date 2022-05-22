@@ -1,0 +1,78 @@
+<!-- static==same    dyanamic==changes -->
+
+<!-- SIMPLE WEB PAGE CREATION -->
+<!-- <h1>
+    welcome {{name}}<br> You are {{age}} years old<br> You are {{nationality}}
+</h1> -->
+
+
+
+
+<!-- creating a word counter in django -->
+
+<!-- there are two types of methods
+get method : we store those info that are not personal bcs they are shown in url 
+post method : info that is not shown in url like username and pass
+
+when we do not write anything in method it will consider GET method by default-->
+
+<!-- <h1>Input your text below: </h1>
+<form method="POST" action="counter">
+    {% csrf_token %}    -->
+
+    <!-- csrf token is imp for post method otherwise it will not work -->
+
+<!-- 
+    <textarea name ="words" rows="25" cols="50"></textarea> </textarea><br>
+    <input type="submit"/>
+ </form> -->
+ <!-- {% load static%}
+<link rel="stylesheet" href="{% static 'style.css' %} ">
+<h1> Hey,Welcome to my project </h1> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="'UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Progress Report </title>
+</head>
+<body>
+    <form action="" method="POST">
+    {% csrf_token %}
+<label for="name">NAME</label>
+<input type="text" name="name" placeholder="Enter your name" required><br>
+
+<!-- <label for="uid">UID</label>
+<input type="text" uid="uid" placeholder="Enter Your UID" required><br> -->
+
+
+<label for="group">GROUP NUMBER</label>
+<input type="text" group="group" placeholder="Enter Your Group Number" required><br>
+
+
+<label for="Members">GROUP MEMBERS(if not , write 'none')</label><br>
+<input type="text" member1="member1" placeholder="Group Member1 " required><br>
+<input type="text" member2="member2" placeholder="Group Member2 " required><br>
+<input type="text" member3="member3" placeholder="Group Member3" required><br>
+<input type="text" member4="member4" placeholder="Group Member4 " required><br>
+<input type="text" member5="member5" placeholder="Group Member5 " required><br>
+<input type="text" member6="member6" placeholder="Group Member6" required><br>
+<input type="text" member7="member7" placeholder="Group Member7 " required><br><br>
+
+<label for="tendays">Progress in 10 days</label><br>
+<input type="text" tendays="tendays" placeholder="10 days progress " required><br>
+
+
+<label for="twentydays">Progress in 20 days</label><br>
+<input type="text" twentydays="twentydays" placeholder="20 days progress " required><br>
+
+
+<label for="thirtydays">Progress in 30 days</label><br>
+<input type="text" thirtydays="thirtydays" placeholder="30 days progress " required><br>
+<input type="submit" value="submit" href="#">  </form>
+
+<!-- <li><a class="getstarted scrollto" href="">Register Yourself</a></li> -->
+</body>
+</html>
